@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zarezerwuj stolik</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media-queries.css" />
+  </head>
+
+  <body>
+    <div class="summary">
+      <div class="page">
+        <nav>
+          <img class="logo" src="./img/logo2.png" alt="logo" />
+          <span>Podsumowanie rezerwacji :</span>
+        </nav>
+        <h1 class="title">Dziękujemy za Twoją rezerwację</h1>
+        <div class="list">
+          <div class="list-element date">
+            <p>Data rezerwacji:&nbsp;</p>
+            <span></span>
+          </div>
+          <div class="list-element name">
+            <p>Imię osoby rezerwującej:&nbsp;</p>
+            <span></span>
+          </div>
+          <div class="list-element phone">
+            <p>Numer telefon:&nbsp;</p>
+            <span></span>
+          </div>
+          <div class="list-element table">
+            <p>Nr stolika:&nbsp;</p>
+            <span></span>
+          </div>
+          <div class="list-element additionals">
+            <p>Dodatkowe miejsca:&nbsp;</p>
+            <span></span>
+		  </div>
+		  <div class="list-element more">
+            <p>Opcje dodatkowe:&nbsp;</p>
+			<span class="more1span"></span>
+			<span class="more2span"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <form class="form">
+        <img class="logo" src="./img/logo2.png" alt="logo" />
+        <div class="nav-container">
+          <div class="form-group container1">
+            <span class="form-label">Data rezerwacji</span>
+            <input id="form-date" class="form-control" type="date" required />
+          </div>
+          <div class="form-group container2">
+            <span class="form-label">Wyświetl stoliki dla </span>
+            <select id="form-howMany" class="form-control" >
+              <option value="" selected disabled hidden>Wybierz</option>
+              <option>4</option>
+              <option>8</option>
+            </select>
+            <span class="form-label ">osób.</span><span class="small"></span>
+          </div>
+          <div id="allAdditional-div" class="form-group container4">
+            <span class="form-label">Ilość dodtkowych miejsc</span>
+            <select id="allAdditional" class="form-control">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+            <div class="form-group container3">
+                <legend>Opcje dodatkowe</legend>
+                <div>
+                  <input
+					type="checkbox"
+					class="more1"
+                  />
+                  <label class="more1label" for="coding">Stolik do karmienia dziecka</label>
+                </div>
+                <div>
+				  <input
+				  value="Miska z wodą dla pupila"
+                    type="checkbox"
+					class="more2"
+                  />
+                  <label class="more2label" for="music">Miska z wodą dla pupila</label>
+                </div>
+			</div>
+			<d class="d form-group">
+            <button type="button form-group" class="confirm-reservation">
+              Potwierdź 
+			</button>
+		</div>
+          </div>
+        </div>
+      </form>
+    </nav>
+    <main>
+      <img class="entrance" src="./img/entrance.png" alt="" />
+      <img class="stage" src="./img/stage.png" alt="" />
+      <img class="bar" src="./img/bar.png" alt="" />
+      <img class="wc" src="./img/wc.png" alt="" />
+
+      <img
+        data-table="1"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img1"
+        src="./img/40os1.png"
+        alt=""
+        class="table table1"
+      />
+      <img
+        data-table="2"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img2"
+        src="./img/40os2.png"
+        alt=""
+        class="table table2"
+      />
+      <img
+        data-table="3"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img3"
+        src="./img/40os3.png"
+        alt=""
+        class="table table3"
+      />
+      <img
+        data-table="4"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img4"
+        src="./img/40os4.png"
+        alt=""
+        class="table table4"
+      />
+      <img
+        data-table="5"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img5"
+        src="./img/40os5.png"
+        alt=""
+        class="table table5"
+      />
+      <img
+        data-table="6"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img6"
+        src="./img/40os6.png"
+        alt=""
+        class="table table6"
+      />
+      <img
+        data-table="7"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img7"
+        src="./img/40os7.png"
+        alt=""
+        class="table table7"
+      />
+      <img
+        data-table="8"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img8"
+        src="./img/8os8.png"
+        alt=""
+        class="table bigger table8"
+      />
+      <img
+        data-table="9"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img9"
+        src="./img/8os9.png"
+        alt=""
+        class="table bigger table9"
+      />
+      <img
+        data-table="10"
+        style="border-color: rgba(0, 0, 0, 0);"
+        id="img10"
+        src="./img/8os10.png"
+        alt=""
+        class="table bigger table10"
+	  />
+	  <img src="./img/legenda.png" class="legend">
+		  	  </img>
+    </main>
+
+    <script src="./javascripts/reservationClass.js"></script>
+    <script src="./javascripts/display.js"></script>
+    <script src="./javascripts/main.js"></script>
+  </body>
+</html>

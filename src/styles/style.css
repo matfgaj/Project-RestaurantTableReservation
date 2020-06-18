@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Balsamiq Sans", cursive, sans-serif;
+}
+
+/* nav style */
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(20, 14, 2);
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  line-height: 10vh;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+div.overlay {
+  display: none;
+}
+.open {
+  position: absolute;
+  display: none;
+  left: -20%;
+}
+div.logo {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 80%;
+  top: 0;
+}
+
+.logo img {
+  position: absolute;
+  width: 15vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+div.container {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  left: 20%;
+  right: 0;
+  top: 0;
+}
+
+.container a {
+  flex-basis: 16.66%;
+  flex-grow: 1;
+  margin: auto;
+  height: 10vh;
+  cursor: pointer;
+}
+
+.container a:hover {
+  color: orange;
+}
+
+a.reservation {
+  background-color: white;
+  color: orange;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.reservation i {
+  padding-right: 5px;
+}
+
+a.reservation:hover {
+  color: rgb(48, 33, 5);
+}
+.open {
+  display: none;
+}
+
+/* main style */
+
+main {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+
+section.about {
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  text-align: center;
+  background-image: url(.././img/img1.jpg);
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1.about {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%);
+  font-size: 2rem;
+  color: white;
+}
+
+.about div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+}
+
+.about p {
+  margin: 1.5em auto;
+  color: rgb(20, 14, 2);
+  line-height: 1.5em;
+}
+
+span.zniżka {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: orange;
+}
+
+div.opacity {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  height: 65%;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+section.menu {
+  position: relative;
+  width: 100vw;
+  height: 150vh;
+  text-align: center;
+}
+
+h1.menu {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgb(51, 24, 4);
+  padding: 5vh;
+}
+
+.menu img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 40%;
+  height: auto;
+}
+
+section.photos {
+  position: relative;
+  height: 80vh;
+  border-top: gray 2px solid;
+  /* border-bottom: gray 2px solid; */
+}
+
+div.photos {
+  height: calc(100% - 10vh);
+  text-align: center;
+  margin: 5vh 0;
+}
+
+section.contact {
+  position: relative;
+  height: 26vh;
+  text-align: center;
+  border-bottom: 2vh solid rgb(51, 24, 4);
+  border-top: 2vh solid orange;
+}
+
+.contact p {
+  line-height: 1.5rem;
+}
+
+.contact p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.contact img {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translate(0, -50%);
+  width: 9vw;
+  height: 9vw;
+  border-radius: 50%;
+}
+
+/* div.contact {
+    border-bottom: 2vh solid rgb(51, 24, 4);
+
+} */
+
+.contact i {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: rgb(51, 24, 4);
+  cursor: pointer;
+}
+
+.contact i:hover {
+  color: orange;
+}
+/*  
+hamburger menu below */
+.overlay {
+  position: fixed;
+  width: 0;
+  top: 0;
+  background-color: #333;
+  opacity: 0.85;
+  overflow-x: hidden;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.overlay-content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  margin-top: 30px;
+}
+
+.overlay-content a {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+.overlay-content div:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #ffffffc5;
+  transition: 0.3s;
+  display: block;
+}
+.overlay-content div:hover {
+  color: #ff9f1a;
+}
+
+.overlay-content div:hover:after {
+  width: 25%;
+}

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.Container {
+  display: none;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.486);
+  width: 100vw;
+  height: 100vh;
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.884);
+  padding: 20px 40px;
+  width: 30vw;
+  height: 70vh;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.form-control {
+  --default-color: currentColor;
+  --invalid-color: #e74c3c;
+  --valid-color: orange;
+  --border-bottom-color: currentColor;
+  position: relative;
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+.x {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.form-control::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: var(--valid-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+.form-control:focus-within::after {
+  transform: scaleX(1);
+}
+.form-control input {
+  padding: 8px 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: currentColor;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.form-control input:invalid ~ label {
+  color: var(--invalid-color);
+}
+.form-control input:valid ~ label {
+  color: var(--valid-color);
+}
+.form-control input:placeholder-shown ~ label {
+  color: var(--default-color);
+}
+.form-control input:focus ~ label,
+.form-control input:not(:placeholder-shown) ~ label {
+  transform: translateY(-120%) scale(0.75);
+}
+.form-control label {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  transition: 0.3s;
+  transform-origin: left;
+  font-size: 1.4rem;
+}
+.btn {
+  position: relative;
+  width: 50%;
+  padding: 6px 0;
+  font-size: 16px;
+  color: currentColor;
+  background: transparent;
+  border: 2px solid orange(51, 152, 219, 1);
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 166, 0, 0.5),
+    transparent
+  );
+  transform: translateX(-100%);
+  transition: 0.6s;
+}
+.btn:hover {
+  box-shadow: 0 0 10px 5px orange;
+}
+.btn:hover::before {
+  transform: translateX(100%);
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+    0 1px 1px rgba(128, 128, 128, 0.155),
+    0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+    0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+    0 12px 12px rgba(128, 128, 128, 0.35);
+}
+.login-form h1 {
+  margin: 0 0 24px 0;
+  font-size: 36px;
+}
+.login-form .form-control {
+  margin: 4vh 0 0 0;
+}
+.login-form .btn {
+  margin: 5vh 0 0 0;
+}

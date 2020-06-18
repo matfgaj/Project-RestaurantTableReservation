@@ -1,0 +1,25 @@
+{
+  "Users": [
+    {
+      "firstName": "Steve",
+      "lastName": "Griffin",
+      "mail": "Delhi@gmail.com",
+      "phoneNumber": "565959544",
+      "password": "Steven1932"
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Melark",
+      "mail": "Chennai@gmail.com",
+      "phoneNumber": "585929544",
+      "password": "Peter1997"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Dock",
+      "mail": "mateuszg116@wp.pl",
+      "phoneNumber": "585959544",
+      "password": "Kasia1"
+    }
+  ]
+}
