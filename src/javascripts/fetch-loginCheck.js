@@ -32,7 +32,7 @@ function UserFetch() {
         if (isMailEqual && isPasswordEqual) {
           no = false;
           window.location.replace(
-            `Project-RestaurantTableReservation/src/html/reservationApp/resrvation.html?${user.firstName}|${user.phoneNumber}`
+            `/Project-RestaurantTableReservation/src/html/reservationApp/resrvation.html?${user.firstName}|${user.phoneNumber}`
           );
         } else {
           no = true;
