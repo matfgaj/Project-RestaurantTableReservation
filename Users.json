@@ -17,9 +17,9 @@
     {
       "firstName": "John",
       "lastName": "Dock",
-      "mail": "mateuszg116@wp.pl",
+      "mail": "example@mail.pl",
       "phoneNumber": "585959544",
-      "password": "Kasia1"
+      "password": "Password1"
     }
   ]
 }
