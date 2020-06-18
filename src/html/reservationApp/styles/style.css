@@ -87,7 +87,7 @@ main {
   position: relative;
   height: 80vh;
   width: 100%;
-  background-image: url(/src/html/reservationApp/img/tło-cegla.jpg);
+  background-image: url(/Project-RestaurantTableReservation/blob/master/src/html/reservationApp/img/tło-cegla.jpg);
   background-size: cover;
 }
 
