@@ -115,7 +115,7 @@ const addReservation = () => {
         ".more2span"
       ).innerText = ` Miska z wodą dla pupila`;
     }
-    setTimeout(redirect, 400000);
+    setTimeout(redirect, 5000);
   };
 
   infoPage();
