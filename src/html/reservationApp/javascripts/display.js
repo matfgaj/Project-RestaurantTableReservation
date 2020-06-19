@@ -46,6 +46,8 @@ const displayRestaurant = (reservations, restaurantTables) => {
       table = null;
 
       checkDate();
+      
+      document.getElementById("allAdditional-div").style.display = "none";
 
       document.getElementById("img8").style.borderColor = "rgb(224, 0, 0)";
       document.getElementById("img9").style.borderColor = "rgb(224, 0, 0)";
