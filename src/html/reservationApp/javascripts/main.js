@@ -38,6 +38,7 @@ const checkInputs = () => {
     confirmButton.addEventListener("click", addReservation);
     confirmButton.style.borderColor = "orange";
     confirmButton.style.pointerEvents = "auto";
+        confirmButton.style.cursor = "pointer";
   } else if (table == null) {
     confirmButton.style.borderColor = "rgba(255, 255, 255, 0)";
     confirmButton.removeEventListener("click", addReservation);
@@ -45,6 +46,8 @@ const checkInputs = () => {
   } else if (!DateOfReservation.value) {
     confirmButton.style.borderColor = "rgba(255, 255, 255, 0)";
     confirmButton.style.pointerEvents = "none";
+    confirmButton.style.cursor = "none";
+
 
     alert("Prosimy wybrać datę rezerwacji");
   }
