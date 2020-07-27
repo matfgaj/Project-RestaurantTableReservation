@@ -8,7 +8,7 @@ Layout of restaurant page with table reservation app
 Go here https://matfgaj.github.io/Project-RestaurantTableReservation/
 
 To go into reservation app, you need to CLICK TOP RIGHT CORNER BUTTON.
-To log in data below.
+To log in USE data BELOW.
 
 USE MAIL : example@mail.pl  PASSWORD : Password1
 
